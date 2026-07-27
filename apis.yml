@@ -1,8 +1,25 @@
 aid: gnip
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gnip.png
 name: Gnip
-description: 'Gnip is a company surfaced as a portfolio company of foundry-group, uncork-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: developer-tools. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Gnip was a social media data aggregation company founded in 2008 in Boulder, Colorado by
+  Eric Marcoullier and Jud Valeski. It became the first authorized reseller of the Twitter "firehose"
+  and delivered enterprise-grade access to real-time and historical social data from Twitter, Tumblr,
+  WordPress, Disqus, StockTwits and many other sources through products such as PowerTrack, Historical
+  PowerTrack, the Search API, the Audience API and the Engagement API. Twitter acquired Gnip in April 2014
+  and folded its technology into Twitter''s enterprise data platform; the Gnip brand and standalone APIs
+  were retired and gnip.com now 301-redirects to the Twitter/X enterprise developer documentation. This
+  profile is preserved for historical/network completeness — Gnip is no longer an independent provider.'
 url: https://raw.githubusercontent.com/api-evangelist/gnip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +28,23 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: twitter
+x-acquired-date: '2014-04'
+x-successor: https://docs.x.com/enterprise
+x-domain-redirect: https://developer.twitter.com/en/enterprise
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Developer Tools
+- Social Media
+- Data
+- Streaming
+- Enterprise
+- Analytics
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +54,8 @@ maintainers:
 common:
 - type: Website
   url: https://www.gnip.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
